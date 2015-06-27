@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", type="text/css", href="../stylesheets/main.css")
+    script(src="../scripts/bower_components/babylonjs/dist/babylon.2.1.js")
+    script(src="../scripts/bower_components/handjs/hand.js")
+    script(src="../scripts/bower_components/brython/www/src/brython.js")
+    script(type="text/python", src="../scripts/test.py")
+
+  body(onload="brython()")
+    canvas(id="renderCanvas")
+
+
+
